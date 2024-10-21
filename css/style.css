@@ -53,7 +53,7 @@ hr{
 
 
 .client_section {
-  background-image: url('images/Slide5.PNG');
+  background-image: url('/images/Slide5.PNG');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ hr{
 }
 
 .about_section {
-  background-image: url('images/Slide2.PNG');
+  background-image: url('/images/Slide2.PNG');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ hr{
 }
 
 .service_section{
-  background-image: url('images/Sem\ título.png');
+  background-image: url('/images/Sem\ título.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ hr{
 }
 
 .team_section{
-  background-image: url('images/Slide4.PNG');
+  background-image: url('/images/Slide4.PNG');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -797,7 +797,7 @@ a:focus {
 /* client section start */
 .client_section .heading_container {
   margin-bottom: 30px;
-  background-image: url("images/Slide5.PNG");
+  background-image: url("/images/Slide5.PNG");
 }
 
 .client_section .box {
