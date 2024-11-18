@@ -1200,7 +1200,7 @@ a:focus {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
-  gap: 40px; /* Espaço entre as colunas */
+  gap: 30px; /* Espaço entre as colunas */
   align-items: center; /* Alinha itens verticalmente ao centro */
 }
 
@@ -1219,16 +1219,29 @@ a:focus {
 
 .grid_item.texto h2 {
   margin-bottom: 15px;
-  font-size: 26px;
+  font-size: 24px;
   color: #0D516C; /* Cor do título */
   font-weight: bold;
 }
 
-.grid_item.texto p {
-  font-size: 16.5px;
+/* Texto desktop */
+.desktop-text {
+  text-align: justify;
+  font-size: 16px;
   line-height: 1.6;
   color: #333; /* Cor do texto */
-  text-align: justify;
+}
+
+/* Texto mobile */
+.mobile-text {
+  display: none; /* Esconde por padrão */
+}
+
+.mobile-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left; /* Alinhamento à esquerda no mobile */
+  color: #333; /* Cor do texto */
 }
 
 /* Responsividade */
@@ -1251,7 +1264,6 @@ a:focus {
   }
 
   .mobile-text {
-    display: block; /* Mostra o texto resumido no mobile */
-    font-size: 14px; /* Texto menor para melhor legibilidade */
+    display: block; /* Mostra o texto dividido no mobile */
   }
 }
