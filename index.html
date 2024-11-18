@@ -12,7 +12,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicongtech.png" type="">
 
-  <title> GTECH - Global Netwrok </title>
+  <title>GTECH - Global Netwrok </title>
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -24,6 +24,24 @@
 </head>
 
 <body>
+
+  <!-- header section starts -->
+<!-- end header section -->
+
+<!-- Nova Section: Video Background -->
+<section class="video_section">
+  <div class="video_background">
+    <!-- Aqui ficará o vídeo de fundo -->
+    <video autoplay muted loop id="background-video">
+      <source src="./images/porto_de_cima.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="content">
+    <h1>SOLUÇÕES INOVADORAS <br>E TECNOLÓGICAS</h1>
+    <img src="./images/logo.png" alt="GTech" class="section-image">
+  </div>
+</section>
 
   <div class="hero_area">
 
@@ -48,20 +66,20 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
+            <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#fale_section">Fale Conosco</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#service_section">Serviços</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#about_section"> Sobre</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#diferencial">Nossa Empresa</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#produtos">Produtos</a>
               </li>
             </ul>
@@ -71,7 +89,7 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
+    <section class="slider_section" id="fale_section">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -83,7 +101,7 @@
                       GTECH <br> <hr>
                       Global Network
                     </h1>
-                    <p>
+                    <p id="sobre_empresa">
                       Nossa missão é transformar ideias em soluções tecnológicas personalizadas, ajudando sua empresa a alcançar novos patamares. Seja qual for o desafio, estamos prontos para fornecer as ferramentas e estratégias necessárias para impulsionar o seu negócio com inovação. Conte conosco para fazer a diferença!
                     </p>
                     <div class="btn-box">
@@ -133,7 +151,7 @@
   <!-- end about section -->
 
   <!-- why section -->
-
+<!-- 
   <section class="why_section layout_padding" id="diferencial">
     <div class="container">
       <div class="heading_container heading_center">
@@ -201,7 +219,33 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section class="grid_section" id="diferencial">
+    <div class="container">
+      <div class="grid">
+        <!-- Coluna 1: Vídeo -->
+        <div class="grid_item video">
+          <video autoplay muted loop>
+            <source src="./images/porto_de_cima.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+        </div>
+        
+        <!-- Coluna 2: Texto -->
+        <div class="grid_item texto">
+          <h2>Arte de INOVAR é nosso DNA</h2>
+          <p>
+            Desenvolvemos projetos e soluções customizadas na área de tecnologia para gerar benefícios e resultados satisfatórios para nossos clientes. 
+            Possuímos profissionais altamente qualificados, todos com mais de 15 anos de experiência nos mais diversos segmentos.
+            Fazemos e vivemos porto e automação portuária há cerca de 25 anos acompanhando e contribuindo com as autoridades que regulamentam o setor para a evolução, 
+            principalmente em tecnologia, inovação e gestão. Sustentabilidade, Meio Ambiente e Social estão sempre como prioridades em nossos projetos.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
+  
 
   <!-- end why section -->
 
@@ -249,7 +293,7 @@
                   (13) 3307-0244 | (13) 3307-0251
                 </span>
                 </a>
-                <a>
+                <a href="mailto:atendimento@gtechg.com.br">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   atendimento@gtechg.com.br
@@ -258,13 +302,10 @@
             </div>
           </div>
           <div class="info_social">
-            <a href="">
+            <a href="https://m.facebook.com/GtechTecnologia2021">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
+            <a href="https://br.linkedin.com/in/gtech-global-teconologia-network-943344203">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
             <a href="">
@@ -278,7 +319,7 @@
               Sobre
             </h4>
             <p>
-              Na Gtech, oferecemos soluções tecnológicas personalizadas com inovação, excelência técnica e foco em resultados, garantindo a melhor experiência para nossos clientes.
+              Na GTech, oferecemos soluções tecnológicas personalizadas com inovação, excelência técnica e foco em resultados, garantindo a melhor experiência para nossos clientes.
             </p>
           </div>
         </div>
@@ -290,6 +331,9 @@
             <div class="info_links">
               <a class="active" href="">
                 Home
+              </a>
+              <a class="" href="#fale_section">
+                Fale Conosco
               </a>
               <a class="" href="#about_section">
                 Sobre
@@ -316,7 +360,7 @@
   <section class="footer_section">
     <div class="container">
       <p>
-        &copy; <b>GTECH Global Network - 2024</b>
+        &copy; <b>GTech Global Tecnologia Network - 2024</b>
       </p>
     </div>
   </section>
@@ -330,6 +374,25 @@
   <script type="text/javascript" src="js/custom.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".header_section");
+    const videoSection = document.querySelector(".video_section");
+
+    window.addEventListener("scroll", function () {
+      const videoBottom = videoSection.offsetTop + videoSection.offsetHeight;
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > videoBottom) {
+        header.classList.add("scrolled"); // Adiciona fundo azul
+      } else {
+        header.classList.remove("scrolled"); // Retorna para o fundo transparente
+      }
+    });
+  });
+</script>
+
 
 </body>
 
