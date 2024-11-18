@@ -6,6 +6,10 @@ hr{
   border-color: white;
 }
 
+#sobre_empresa{
+  font-size: 115%;
+}
+
 .why_section .box {
   display: flex;
   align-items: center;
@@ -1048,3 +1052,206 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Barra de Navegação */
+.header_section {
+  position: fixed;
+  font-size: 130%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent; /* Fundo transparente escuro */
+  padding: 0px 0;
+  transition: background 0.3s ease;
+}
+
+.header_section.scrolled {
+  background: #0D516C; /* Fundo azul ao rolar */
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  color: #ffffff !important; /* Cor branca para os links */
+  font-size: 90%;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover {
+  color: #00bbf0 !important; /* Cor azul ao passar o mouse */
+}
+
+.custom_nav-container .navbar-brand img {
+  width: 100px; /* Ajuste o tamanho do logo */
+}
+
+@media (max-width: 768px) {
+  .header_section {
+    padding: 5px 0;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    font-size: 14px; /* Ajusta o tamanho da fonte em dispositivos móveis */
+  }
+
+  .custom_nav-container .navbar-toggler {
+    border: none;
+  }
+
+  .custom_nav-container .navbar-toggler-icon {
+    background-color: #ffffff; /* Toggler icon cor */
+  }
+}
+
+/* Nova Section: Video Background */
+.video_section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% da altura da janela */
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Espaço para a barra de navegação fixa */
+}
+
+.video_section .video_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* O vídeo ficará atrás do conteúdo */
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o vídeo cubra toda a área da seção */
+}
+
+.video_section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.video_section .section-image {
+  width: 300px;
+  height: auto;
+  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+  border-radius: 8px;
+}
+
+.video_section h1 {
+  color: white;
+  background-color: rgba(0, 187,240, 0.5);
+  font-size: 40px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateX(-100%); /* Começa à esquerda */
+  transition: transform 2s ease-out, opacity 2s ease-out; /* Transição suave */
+}
+
+.video_section h1.visible {
+  opacity: 1; /* Torna o texto visível */
+  transform: translateX(0); /* Move para a posição normal */
+}
+
+.video_section .content:hover .section-image {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+  transition: transform 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .video_section .content {
+    flex-direction: column; /* Em telas menores, a imagem e o texto ficam empilhados */
+    text-align: center;
+  }
+
+  .video_section .section-image {
+    margin-right: 0;
+    margin-bottom: 20px; /* Adiciona margem inferior na versão mobile */
+    width: 150px; /* Reduz o tamanho da imagem */
+  }
+
+  .video_section h1 {
+    font-size: 2.5rem; /* Ajusta o tamanho do texto em telas menores */
+  }
+}
+
+/* Container geral da seção */
+.grid_section {
+  padding: 150px 70px; /* Aumenta o espaço interno da seção */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Centraliza o container */
+.container {
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Grid principal */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  gap: 40px; /* Espaço entre as colunas */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilo da coluna de vídeo */
+.grid_item.video video {
+  width: 100%; /* O vídeo ocupa toda a largura da coluna */
+  height: auto; /* Mantém a proporção do vídeo */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo da coluna de texto */
+.grid_item.texto {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid_item.texto h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #0D516C; /* Cor do título */
+  font-weight: bold;
+}
+
+.grid_item.texto p {
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: #333; /* Cor do texto */
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Alinha as colunas verticalmente no mobile */
+  }
+
+  .grid_item {
+    margin-bottom: 20px; /* Espaçamento entre os itens no mobile */
+  }
+
+  .grid_item.video video {
+    width: 120%; /* Torna o vídeo maior no mobile */
+    margin-left: -10%; /* Centraliza visualmente */
+  }
+
+  .desktop-text {
+    display: none; /* Esconde o texto completo no mobile */
+  }
+
+  .mobile-text {
+    display: block; /* Mostra o texto resumido no mobile */
+    font-size: 14px; /* Texto menor para melhor legibilidade */
+  }
+}
