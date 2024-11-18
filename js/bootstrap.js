@@ -4439,4 +4439,10 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
+
+window.addEventListener('load', function() {
+  const heading = document.querySelector('.video_section h1');
+  heading.classList.add('visible');
+});
+
 //# sourceMappingURL=bootstrap.js.map
